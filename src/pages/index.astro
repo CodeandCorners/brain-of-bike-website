@@ -17,7 +17,7 @@ const stats = [
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brain of Bike</title>
-    <link rel="icon" type="image/png" sizes="256x256" href="/favicon-logo2.png" />
+    <link rel="icon" type="image/svg+xml" href="/Logo6.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,8 +28,8 @@ const stats = [
   <body>
     <header class="topbar">
       <a class="brand" href="/">
-        <img class="brand-mark" src="/Logo3.png" alt="Brain of Bike logo" />
-        <img class="secondary-mark" src="/Logo4.png" alt="Brain of Bike secondary logo" />
+        <img class="brand-mark" src="/Logo6.svg" alt="Brain of Bike logo" />
+        <img class="secondary-mark" src="/brain of bike text logo.png" alt="Brain of Bike secondary logo" />
       </a>
 
       <nav class="nav">
@@ -46,7 +46,7 @@ const stats = [
           <img src="/Logo5.png" alt="Brain of Bike logo" class="hero-logo" />
         </div>
 
-        <img src="/Logo4.png" alt="Brain of Bike wordmark" class="wordmark-logo" />
+        <img src="/brain of bike text logo.png" alt="Brain of Bike wordmark" class="wordmark-logo" />
 
         <a href="#" class="store-btn coming-soon-btn" aria-label="Coming soon to the App Store">
           <svg viewBox="0 0 24 24" width="26" height="26" fill="white" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -115,14 +115,14 @@ const stats = [
   .brand-mark {
     display: block;
     width: auto;
-    height: 72px;
+    height: 120px;
     object-fit: contain;
   }
 
   .secondary-mark {
     display: block;
     width: auto;
-    height: 120px;
+    height: 64px;
     object-fit: contain;
   }
 
@@ -172,13 +172,14 @@ const stats = [
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: -24px;
+    gap: 16px;
   }
 
   .icon-tile {
     width: 320px;
     height: 320px;
     max-width: 80vw;
+    margin-bottom: 48px;
     background: var(--navy);
     border-radius: 40px;
     display: flex;
@@ -199,7 +200,6 @@ const stats = [
     width: min(580px, 90vw);
     height: auto;
     object-fit: contain;
-    margin: -32px 0 0;
   }
 
   .store-btn {
@@ -213,10 +213,6 @@ const stats = [
     padding: 12px 26px;
     border-radius: 999px;
     box-shadow: 0 10px 24px rgba(143, 176, 199, 0.5);
-  }
-
-  .coming-soon-btn {
-    margin-top: -48px;
   }
 
   .store-btn svg {
