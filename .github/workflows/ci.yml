@@ -40,6 +40,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Smoke test build output
+        run: |
+          for f in index features about support download privacy; do
+            test -s "dist/$([ "$f" = index ] && echo index.html || echo "$f/index.html")" || { echo "Missing page: $f"; exit 1; }
+          done
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
