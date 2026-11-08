@@ -1,6 +1,4 @@
 ---
-// src/pages/privacy.astro
-// Placeholder privacy policy (required for App Store listing).
 const navItems = ["Home", "Features", "About", "Support", "Download"];
 const activeItem = "";
 ---
@@ -9,7 +7,7 @@ const activeItem = "";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy | Brain of Bike</title>
+    <title>Terms and Conditions | Brain of Bike</title>
     <link rel="icon" type="image/svg+xml" href="/Logo6.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,12 +32,10 @@ const activeItem = "";
       </nav>
     </header>
 
-    <main class="privacy-page">
-      <section class="privacy-card">
-        <h1>Privacy Policy</h1>
-        <p>
-          This is a placeholder. Our full privacy policy will be published here before the Brain of Bike app launches.
-        </p>
+    <main class="legal-page">
+      <section class="legal-content">
+        <h1>Terms and Conditions</h1>
+        <p>Terms and conditions for Brain of Bike will be published here.</p>
         <p>
           Questions in the meantime? Email <a href="mailto:support@madebyckt.com">support@madebyckt.com</a>.
         </p>
@@ -56,10 +52,8 @@ const activeItem = "";
   :root {
     --bg: #eef3f8;
     --navy: #2b3d4f;
-    --accent: #8fb0c7;
     --pill: #dbe6ef;
     --pill-text: #6d818f;
-    --white: #ffffff;
     --border: rgba(43, 61, 79, 0.08);
   }
 
@@ -88,25 +82,10 @@ const activeItem = "";
     text-decoration: none;
   }
 
-  .brand-mark {
-    display: block;
-    width: auto;
-    height: 120px;
-    object-fit: contain;
-  }
+  .brand-mark { display: block; width: auto; height: 120px; object-fit: contain; }
+  .secondary-mark { display: block; width: auto; height: 64px; object-fit: contain; }
 
-  .secondary-mark {
-    display: block;
-    width: auto;
-    height: 64px;
-    object-fit: contain;
-  }
-
-  .nav {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
+  .nav { display: flex; gap: 10px; flex-wrap: wrap; }
 
   .nav-pill {
     text-decoration: none;
@@ -121,13 +100,14 @@ const activeItem = "";
 
   .nav-pill:hover { background: #cfe0ec; }
 
-  .privacy-page {
+  .legal-page {
     display: flex;
     justify-content: center;
     padding: 48px 24px 64px;
   }
 
-  .privacy-card {
+  .legal-content {
+    width: 100%;
     max-width: 720px;
     background: rgba(255, 255, 255, 0.42);
     border: 1px solid var(--border);
@@ -136,9 +116,8 @@ const activeItem = "";
     box-shadow: 0 18px 40px rgba(43, 61, 79, 0.06);
   }
 
-  .privacy-card h1 { margin-top: 0; }
-
-  .privacy-card a { color: var(--navy); }
+  .legal-content h1 { margin-top: 0; }
+  .legal-content a { color: var(--navy); }
 
   .site-footer {
     padding: 24px 32px 36px;
@@ -148,30 +127,13 @@ const activeItem = "";
   }
 
   .site-footer p { margin: 0; }
-
-  .site-footer a {
-    color: var(--navy);
-    text-decoration: none;
-  }
+  .site-footer a { color: var(--navy); text-decoration: none; }
 
   @media (max-width: 720px) {
-    .topbar,
-    .privacy-page {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
+    .topbar, .legal-page { padding-left: 20px; padding-right: 20px; }
     .brand-mark { height: 90px; }
     .secondary-mark { height: 48px; }
-
-    .nav {
-      width: 100%;
-      justify-content: center;
-    }
-
-    .nav-pill {
-      padding: 10px 16px;
-      font-size: 0.8rem;
-    }
+    .nav { width: 100%; justify-content: center; }
+    .nav-pill { padding: 10px 16px; font-size: 0.8rem; }
   }
 </style>

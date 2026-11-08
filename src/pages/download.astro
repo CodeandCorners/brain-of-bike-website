@@ -42,7 +42,10 @@ const activeItem = "Download";
           </svg>
         </div>
         <p class="coming-soon">Coming soon on the App Store</p>
-        <a class="privacy-link" href="/privacy">Privacy Policy</a>
+        <div class="legal-links">
+          <a class="privacy-link" href="/privacy/1.0">Privacy Policy</a>
+          <a class="privacy-link" href="/terms/1.0">Terms and Conditions</a>
+        </div>
       </div>
     </main>
 
@@ -172,6 +175,13 @@ const activeItem = "Download";
   .privacy-link {
     color: var(--pill-text);
     font-size: 0.9rem;
+  }
+
+  .legal-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .site-footer {
